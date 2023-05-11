@@ -1,0 +1,240 @@
+body {
+  width: 1200px;
+  background: black;
+}
+
+/* 初期タイトル */
+.btn {
+  background: black;
+  padding: 10px 30px;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#str {
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  width: 20%;
+  background-color: white;
+}
+#str:hover {
+  background: red;
+  color: white;
+}
+
+/* 初めは、非表示 */
+.hide_area {
+  display: none;
+}
+/*クリックされたら fadeUpクラスを付与し、display:block;で表示させる*/
+.hide_area.fadeUp {
+  display: block;
+}
+/* ボタンがクリックされた後にボタン自体が非表示になる　*/
+.btn.disp_none {
+  display: none;
+}
+
+/* fadeUp */
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  メイン画面の設定 */
+main {
+  width: 1200px;
+  background: black;
+}
+
+.bat {
+  display: flex;
+}
+#cp {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+img {
+  width: 600px;
+  height: 450px;
+  margin: 50px;
+  margin-bottom: 0;
+}
+/*  ジャンケン選択肢*/
+li {
+  list-style-type: none;
+  border: 1px solid #666;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 3px;
+  margin: 3px;
+  margin-top: 15px;
+  width: 200px;
+}
+ul {
+  justify-content: center;
+  text-align: center;
+}
+li:hover {
+  background: red;
+  color: white;
+}
+.selected {
+  background-color: red;
+  color: white;
+}
+
+/**  勝敗表示　**/
+#sh {
+  color: white;
+  font-size: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background: black;
+}
+
+/*   最終画面へ移行　*/
+.hide_ex {
+  display: none;
+  color: white;
+  font-size: 90px;
+}
+/*クリックされたら fadeUpクラスを付与し、display:block;で表示させる*/
+.hide_ex.fadeUp {
+  display: block;
+}
+/* ボタンがクリックされた後にボタン自体が非表示になる　*/
+.disp {
+  display: none;
+}
+section {
+  background: black;
+  width: 1200px;
+  display: flex;
+}
+
+.ex {
+  height: 700px;
+  display: flex;
+}
+
+.exstr {
+  display: flex;
+  justify-content: center;
+  width: 950px;
+}
+.gon {
+  width: 250px;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+}
+.exstr.selected {
+  background-color: red;
+  color: white;
+}
+#exgu {
+  color: black;
+  list-style-type: none;
+  border: 1px solid #666;
+  background-color: white;
+  cursor: pointer;
+  padding-top: 7px;
+  margin: 30px 15px;
+  width: 200px;
+  height: 38px;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+#excho {
+  color: black;
+  list-style-type: none;
+  border: 1px solid #666;
+  background-color: white;
+  cursor: pointer;
+  padding-top: 7px;
+  margin: 30px 15px;
+  width: 200px;
+  height: 38px;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+#expar {
+  color: black;
+  list-style-type: none;
+  border: 1px solid #666;
+  background-color: white;
+  cursor: pointer;
+  padding-top: 7px;
+  margin: 30px 15px;
+  width: 200px;
+  height: 38px;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+#expar:hover {
+  background: red;
+  color: white;
+}
+#exgu:hover {
+  background: red;
+  color: white;
+}
+#excho:hover {
+  background: red;
+  color: white;
+}
+
+/*  最後の画面　*/
+.hide_last {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.lastm {
+  background: black;
+  padding: 10px 30px;
+  color: white;
+  text-align: right;
+  font-size: 70px;
+  margin-right: 60px;
+  align-items: center;
+  width: auto;
+}
+/*クリックされたら fadeUpクラスを付与し、display:block;で表示させる*/
+.hide_last.fadeUp {
+  display: block;
+}
+/* ボタンがクリックされた後にボタン自体が非表示になる　*/
+.disp {
+  display: none;
+}

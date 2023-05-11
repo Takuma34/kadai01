@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>じゃんけんアプリ</title>
+    <link rel="stylesheet" href="css/stlye.css" />
+  </head>
+  <body>
+
+    <!------メニュー画面------>
+
+    <header>
+      <div class="btn">
+        <h2>ジャジャン拳</h2>
+        <button id="str">開始</button>
+      </div>
+    </header>
+
+    <!------じゃんけん選択画面------>
+
+    <main>
+      <div class="hide_area">
+        <div class="bat">
+          <ul>
+            <li id="gu">グー</li>
+            <li id="cho">チョキ</li>
+            <li id="par">パー</li>
+          </ul>
+          <div id="cp"></div>
+        </div>
+
+        <p id="sh"></p>
+      </div>
+    </main>
+
+      <!--------最終画面--------->
+
+    <section>
+      <div class="hide_ex">
+        <div class="ex">
+          <img src="img/Gon-san.jpeg" class="gon" />
+
+          <div class="exstr">
+              <h2 id="exgu">グー</h2>
+              <h2 id="excho">チョキ</h2>
+              <h2 id="expar">パー</h2>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!--------end画面--------->
+
+    <div class="hide_last">
+    <img id="last" src="img/last.jpeg">
+    <p class="lastm">完</p>
+</div>
+
+    <footer></footer>
+
+    <!---jqueryを先に書く-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!---jsを読み込ませる-->
+    <script src="js/test.js"></script>
+  </body>
+</html>
